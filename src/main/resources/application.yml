@@ -1,18 +1,18 @@
 weather:
   api:
     key: ${WEATHER_API_KEY}
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            client-id: ${GOOGLE_CLIENT_ID}
-            client-secret: ${GOOGLE_CLIENT_SECRET}
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: ${GOOGLE_CLIENT_ID}
+#            client-secret: ${GOOGLE_CLIENT_SECRET}
   main:
     allow-circular-references: true
   server:
-    port: ${SERVER_PORT}
+    port: 8080
     servlet:
       context-path: /journal
   redis:
@@ -22,8 +22,8 @@ spring:
       password: ${REDIS_PASSWORD}
   data:
     mongodb:
-      uri: ${MONGODB_URI}
-      database: journaldb
+      uri: mongodb+srv://kanaksng123_db_user:kanak123@cluster0.edybjhp.mongodb.net/?appName=Cluster0
+      database: Journaldb
       auto-index-creation: true
   mail:
     host: smtp.gmail.com
@@ -49,7 +49,7 @@ spring:
         spring:
           json:
             trusted:
-              packages: net.engineeringdigest.journalApp.model
+              packages: kanak.project.journalApp.model
     properties:
       security:
         protocol: SASL_SSL
