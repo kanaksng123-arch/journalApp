@@ -1,0 +1,13 @@
+{
+  "steps": {
+    "build": {
+      "cmds": [
+        "chmod +x mvnw",
+        "./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install"
+      ]
+    }
+  },
+  "deploy": {
+    "cmd": "java -Dserver.port=$PORT $JAVA_OPTS -jar target/journalApp-0.0.1-SNAPSHOT.jar"
+  }
+}
