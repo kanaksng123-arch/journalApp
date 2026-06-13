@@ -1,13 +1,17 @@
 {
+  "packages": {
+    "java": "17",
+    "maven": "3.9.16"
+  },
   "steps": {
     "build": {
       "cmds": [
         "chmod +x mvnw",
-        "./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install"
+        "./mvnw -B -DskipTests clean install"
       ]
     }
   },
   "deploy": {
-    "cmd": "java -Dserver.port=$PORT $JAVA_OPTS -jar target/journalApp-0.0.1-SNAPSHOT.jar"
+    "cmd": "java -Dserver.port=$PORT -jar target/journalApp-0.0.1-SNAPSHOT.jar"
   }
 }
