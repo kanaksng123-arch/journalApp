@@ -77,12 +77,19 @@ Kafka → Email Service
 
 ## ⚙️ Environment Variables
 MONGODB_URI
+
 REDIS_URI
+
 GOOGLE_CLIENT_ID
+
 GOOGLE_CLIENT_SECRET
+
 WEATHER_API_KEY
+
 JAVA_EMAIL
+
 JAVA_EMAIL_PASSWORD
+
 JWT_SECRET
 
 ## 👨‍💻 Developer
