@@ -31,11 +31,17 @@ A production-grade backend REST API application built with Spring Boot, featurin
 
 ## 🏗️ Architecture
 Client → Spring Security (JWT Filter) → Controllers → Services → MongoDB Atlas
+
 ↓
+
 Redis Cache
+
 ↓
+
 Weatherstack API
+
 ↓
+
 Kafka → Email Service
 
 ## 🚀 API Endpoints
