@@ -99,5 +99,5 @@ JAVA_EMAIL_PASSWORD
 JWT_SECRET
 
 ## 👨‍💻 Developer
-**Kanak** — B.Tech EEE Student, BPIT Delhi  
+**Kanak** — B.Tech Student, BPIT Delhi  
 Self-learning Java backend development
